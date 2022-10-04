@@ -1,0 +1,93 @@
+@media screen and (min-width:1024px) {
+    
+
+body{
+    background-image: url(https://fondosmil.com/fondo/7182.jpg) ;
+    background-repeat: no-repeat;
+
+}
+.container {
+
+	max-width: 800px;
+	height: 55rem;
+	background-color:#ee9ca7a1 ;
+	margin-left: 15rem;
+	margin-top: 4rem;
+
+
+}
+.card1 , .card2 ,.card3 , .card4 ,.card5, .card6{
+    background-color: #fff;
+    border: 3px #000;
+    margin-top: 10rem;
+    width: 18rem;
+    text-align: center;
+}
+
+.tarjeta1{
+    display: flex;
+    margin-top: -63rem;
+    justify-content: space-around;
+  
+
+   
+}
+.tarjeta2
+{
+    display: flex;
+    justify-content: space-around;
+    margin-top: -5rem;
+}
+
+.card1{
+    margin-left: 15rem;
+}
+.card3{
+    margin-right: 15rem;
+
+}
+.card4{
+    margin-left: 15rem;
+}
+
+.card5{
+    margin-right: 0.01rem;
+}
+.card6{
+ margin-right: 15rem;
+}
+img{
+    height: 14rem;
+}
+}
+
+@media screen and (min-width:320px) and (min-width:1024¿3px) {
+    body{
+        background-image: url(https://fondosmil.com/fondo/7182.jpg) ;
+        background-repeat: no-repeat;
+    
+    }
+    
+
+    .card1{
+        margin-left: 15rem;
+    }
+    .card3{
+        margin-right: 15rem;
+    
+    }
+    .card4{
+        margin-left: 15rem;
+    }
+    
+    .card5{
+        margin-right: 0.5rem;
+    }
+    .card6{
+     margin-right: 15rem;
+    }
+    img{
+        height: 14rem;
+        width: 5px;
+    }
+    }

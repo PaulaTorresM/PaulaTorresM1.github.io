@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sexto Reto</title>
+	<link rel="stylesheet" href="../Practicas js/css/style8.css">
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<main>
+		<div class="contenedor">
+			<br>
+		<form action="" class="formulario" id="formulario">
+			<div class="formulario__grupo" id="grupo__usuario">
+				<label for="usuario" class="formulario__label">Tipo de Documento</label>
+				<div class="formulario__grupo-input">
+                    <select id="tipoD" class="formulario__input ">
+      
+                        <option value="num1">Cedula de Ciudadania</option>
+                        <br>
+                        <option value="num2">Tarjeta de Identidad</option>
+                        <br>
+                        <option value="num3">Pasaporte</option>
+                        <br>
+                        <option value="num4">Cedula de extranjeria</option>
+                      <br>
+                      <br>
+                   
+                   </select>
+                
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Seleccione el tipo de documento</p>
+			</div>
+
+            <div class="formulario__grupo" id="grupo__numero">
+				<label for="numero" class="formulario__label">Numero de Documento</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="numero" id="numero">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Su numero de documento debe ser minimo de 5 caracteres</p>
+			</div>
+
+	
+			<div class="formulario__grupo" id="grupo__nombre">
+				<label for="nombre" class="formulario__label">Nombre</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="nombre" id="nombre" >
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+			</div>
+
+            <div class="formulario__grupo" id="grupo__apellido">
+				<label for="nombre" class="formulario__label">Apellido</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="apellido" id="apellido">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+			</div>
+
+            <div class="formulario__grupo" id="grupo__fecha">
+				<label for="password" class="formulario__label">Fecha de nacimiento</label>
+				<div class="formulario__grupo-input">
+					<input type="date" class="formulario__input" name="fecha" id="fecha">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Debe ser mayor de edad</p>
+			</div>
+
+
+
+			<div class="formulario__grupo" id="grupo__password">
+				<label for="password" class="formulario__label">Contraseña</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password" id="password">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+			</div>
+
+			<div class="formulario__grupo" id="grupo__password2">
+				<label for="password2" class="formulario__label">Repetir Contraseña</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password2" id="password2">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+			</div>
+
+			<div class="formulario__grupo" id="grupo__correo">
+				<label for="correo" class="formulario__label">Correo Electrónico</label>
+				<div class="formulario__grupo-input">
+					<input type="email" class="formulario__input" name="correo" id="correo" >
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Solo se admite correo con dominio misena@</p>
+			</div>
+
+			
+		
+
+			<div class="formulario__grupo" id="grupo__terminos">
+				<label class="formulario__label">
+					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
+					Acepto los Terminos y Condiciones
+				</label>
+					<div class="modal fade" id="myModal" role="dialog">
+					  <div class="modal-dialog modal-sm">
+						<div class="modal-content">
+						  <div class="modal-header">
+							<h4 class="modal-title">Acepta Terminos y Condiciones</h4>
+						  </div>
+						  <div class="modal-body">
+							<p>Estos Términos del Servicio reflejan la forma de trabajar de Google como empresa,
+								<br>
+								 las leyes por las que nos regimos y determinados aspectos que siempre hemos creído que son ciertos.
+								 <br> Por ello, estos Términos del Servicio ayudan a definir la relación que tiene Google contigo cuando interactúas con nuestros servicios. Por ejemplo, estos términos incluyen las siguientes secciones:
+								<br>
+								 Qué puedes esperar de nosotros, donde se describe cómo proporcionamos y desarrollamos nuestros servicios.
+							 Lo que esperamos de ti, donde se establecen ciertas reglas para utilizar nuestros servicios.</p>
+						  </div>
+						  <div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Aceptar</button>
+						  </div>
+						</div>
+					  </div>
+					</div>
+			</div>
+			
+			<div class="formulario__mensaje" id="formulario__mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+			</div>
+
+			<div class="formulario__grupo formulario__grupo-btn-enviar">
+				<button type="submit" class="formulario__btn">Enviar</button>
+				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+			</div>
+		</form>
+	</div>
+
+	</main>
+
+	<script src="js/sextoReto.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+</html>

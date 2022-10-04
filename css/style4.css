@@ -1,0 +1,34 @@
+@media screen and (min-width:1024px) {
+body{
+   background-image: url(https://fondosmil.com/fondo/7191.jpg);
+    text-align: center;
+}
+
+.container{
+    width: 30rem;
+    background-color: rgba(255, 255, 255, 0.751);
+    margin-top: 8rem;
+    height: 22rem;
+}
+#grados , #grados2{
+    border-radius: 30rem;
+}
+}
+@media screen and (min-width:320px) and (max-width:1023px) {
+
+    body{
+        background-image: url(https://fondosmil.com/fondo/7191.jpg);
+         text-align: center;
+     }
+     
+     .container{
+         width: 22rem;
+         background-color: rgba(255, 255, 255, 0.751);
+         margin-top: 20rem;
+         height: 35rem;
+     }
+     #grados , #grados2{
+         border-radius: 30rem;
+     }
+     
+}
